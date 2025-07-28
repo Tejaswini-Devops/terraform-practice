@@ -12,6 +12,6 @@ resource "aws_subnet" "main" {
   #element(var.subnets_cidr,count.index)
 
   tags = {
-    Name = "subnet-${count.index}+1"
+    Name = "subnet-${count.index}"+1
   }
 }
